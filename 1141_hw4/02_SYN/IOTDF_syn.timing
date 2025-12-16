@@ -1,0 +1,256 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 17 18:32:51 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iot_idata_r_reg[58]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  state_reg[1]/CK (DFFRX1)                 0.00       1.00 r
+  state_reg[1]/Q (DFFRX1)                  0.55       1.55 f
+  U3989/Y (NOR2X1)                         0.61       2.15 r
+  U3990/Y (OAI21X2)                        0.43       2.58 f
+  U3993/Y (INVX3)                          0.47       3.06 r
+  U3061/Y (NAND2XL)                        0.31       3.37 f
+  U4018/Y (NOR2BX1)                        0.19       3.56 r
+  U3982/Y (CLKINVX1)                       0.44       4.00 f
+  U4669/Y (OAI22XL)                        0.58       4.59 r
+  U5621/Y (AOI2BB2X1)                      0.26       4.85 r
+  U3051/Y (INVXL)                          0.12       4.97 f
+  U3046/Y (NAND2XL)                        0.17       5.14 r
+  U3127/Y (INVXL)                          0.11       5.24 f
+  U5650/Y (NOR2X1)                         0.20       5.44 r
+  U3052/Y (INVXL)                          0.14       5.58 f
+  U3967/Y (OAI22XL)                        0.32       5.90 r
+  U3106/Y (INVXL)                          0.15       6.05 f
+  U5682/Y (MX3XL)                          0.41       6.46 f
+  U5683/Y (AOI2BB2X1)                      0.26       6.72 f
+  U5684/Y (AOI2BB2X1)                      0.26       6.98 f
+  U3279/Y (AOI211XL)                       0.23       7.21 r
+  U5688/Y (OAI21XL)                        0.10       7.31 f
+  U5689/Y (AO22X1)                         0.34       7.65 f
+  iot_idata_r_reg[58]/D (DFFRX1)           0.00       7.65 f
+  data arrival time                                   7.65
+
+  clock clk (rise edge)                    7.00       7.00
+  clock network delay (ideal)              1.00       8.00
+  clock uncertainty                       -0.10       7.90
+  iot_idata_r_reg[58]/CK (DFFRX1)          0.00       7.90 r
+  library setup time                      -0.21       7.69
+  data required time                                  7.69
+  -----------------------------------------------------------
+  data required time                                  7.69
+  data arrival time                                  -7.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: f1_counter_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iot_idata_r_reg[107]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  f1_counter_r_reg[0]/CK (DFFRX1)          0.00       1.00 r
+  f1_counter_r_reg[0]/Q (DFFRX1)           0.82       1.82 f
+  U3929/Y (NAND2X2)                        0.39       2.21 r
+  U3956/Y (INVX3)                          0.26       2.47 f
+  U3902/Y (INVX3)                          0.36       2.83 r
+  U3976/Y (OAI22XL)                        0.21       3.04 f
+  U3808/Y (AOI222XL)                       0.47       3.51 r
+  U3722/Y (AOI222XL)                       0.25       3.76 f
+  U3662/Y (AOI222XL)                       0.48       4.24 r
+  U3660/Y (AOI222XL)                       0.25       4.50 f
+  U3010/Y (AOI222XL)                       0.48       4.98 r
+  U3070/Y (AOI222XL)                       0.23       5.21 f
+  U3009/Y (AOI222XL)                       0.81       6.02 r
+  U3525/Y (INVX1)                          0.23       6.24 f
+  U3083/Y (OAI22XL)                        0.58       6.82 r
+  U3107/Y (INVXL)                          0.17       7.00 f
+  U4325/Y (OAI22XL)                        0.21       7.20 r
+  U5404/Y (OAI21XL)                        0.11       7.31 f
+  U5405/Y (AO22X1)                         0.33       7.64 f
+  iot_idata_r_reg[107]/D (DFFRX1)          0.00       7.64 f
+  data arrival time                                   7.64
+
+  clock clk (rise edge)                    7.00       7.00
+  clock network delay (ideal)              1.00       8.00
+  clock uncertainty                       -0.10       7.90
+  iot_idata_r_reg[107]/CK (DFFRX1)         0.00       7.90 r
+  library setup time                      -0.21       7.69
+  data required time                                  7.69
+  -----------------------------------------------------------
+  data required time                                  7.69
+  data arrival time                                  -7.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: f1_counter_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iot_idata_r_reg[109]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  f1_counter_r_reg[0]/CK (DFFRX1)          0.00       1.00 r
+  f1_counter_r_reg[0]/Q (DFFRX1)           0.82       1.82 f
+  U3929/Y (NAND2X2)                        0.39       2.21 r
+  U3956/Y (INVX3)                          0.26       2.47 f
+  U3902/Y (INVX3)                          0.36       2.83 r
+  U3976/Y (OAI22XL)                        0.21       3.04 f
+  U3808/Y (AOI222XL)                       0.47       3.51 r
+  U3722/Y (AOI222XL)                       0.25       3.76 f
+  U3662/Y (AOI222XL)                       0.48       4.24 r
+  U3660/Y (AOI222XL)                       0.25       4.50 f
+  U3010/Y (AOI222XL)                       0.48       4.98 r
+  U3070/Y (AOI222XL)                       0.23       5.21 f
+  U3009/Y (AOI222XL)                       0.81       6.02 r
+  U3525/Y (INVX1)                          0.23       6.24 f
+  U3083/Y (OAI22XL)                        0.58       6.82 r
+  U3107/Y (INVXL)                          0.17       7.00 f
+  U4302/Y (OAI22XL)                        0.21       7.20 r
+  U5410/Y (OAI21XL)                        0.11       7.31 f
+  U5411/Y (AO22X1)                         0.33       7.64 f
+  iot_idata_r_reg[109]/D (DFFRX1)          0.00       7.64 f
+  data arrival time                                   7.64
+
+  clock clk (rise edge)                    7.00       7.00
+  clock network delay (ideal)              1.00       8.00
+  clock uncertainty                       -0.10       7.90
+  iot_idata_r_reg[109]/CK (DFFRX1)         0.00       7.90 r
+  library setup time                      -0.21       7.69
+  data required time                                  7.69
+  -----------------------------------------------------------
+  data required time                                  7.69
+  data arrival time                                  -7.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iot_idata_r_reg[57]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  state_reg[1]/CK (DFFRX1)                 0.00       1.00 r
+  state_reg[1]/Q (DFFRX1)                  0.55       1.55 f
+  U3093/Y (NOR2XL)                         0.26       1.81 r
+  U3016/Y (AND2X2)                         0.33       2.13 r
+  U3929/Y (NAND2X2)                        0.27       2.40 f
+  U3956/Y (INVX3)                          0.33       2.73 r
+  U3902/Y (INVX3)                          0.30       3.03 f
+  U3015/Y (OAI22XL)                        0.23       3.27 r
+  U3212/Y (INVXL)                          0.13       3.40 f
+  U3191/Y (AOI222XL)                       0.39       3.79 r
+  U3679/Y (AOI222XL)                       0.23       4.02 f
+  U3044/Y (AOI222XL)                       0.48       4.50 r
+  U3048/Y (AOI222XL)                       0.23       4.73 f
+  U3056/Y (AOI222XL)                       0.46       5.19 r
+  U3562/Y (AOI222XL)                       0.25       5.44 f
+  U3980/Y (AOI222XL)                       0.51       5.95 r
+  U3116/Y (INVXL)                          0.13       6.08 f
+  U3984/Y (OAI22XL)                        0.39       6.48 r
+  U3087/Y (INVXL)                          0.30       6.77 f
+  U5493/Y (AOI221XL)                       0.41       7.18 r
+  U5496/Y (OAI21XL)                        0.11       7.29 f
+  U5497/Y (AO22X1)                         0.34       7.62 f
+  iot_idata_r_reg[57]/D (DFFRX1)           0.00       7.62 f
+  data arrival time                                   7.62
+
+  clock clk (rise edge)                    7.00       7.00
+  clock network delay (ideal)              1.00       8.00
+  clock uncertainty                       -0.10       7.90
+  iot_idata_r_reg[57]/CK (DFFRX1)          0.00       7.90 r
+  library setup time                      -0.21       7.69
+  data required time                                  7.69
+  -----------------------------------------------------------
+  data required time                                  7.69
+  data arrival time                                  -7.62
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iot_idata_r_reg[59]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  state_reg[1]/CK (DFFRX1)                 0.00       1.00 r
+  state_reg[1]/Q (DFFRX1)                  0.55       1.55 f
+  U3093/Y (NOR2XL)                         0.26       1.81 r
+  U3016/Y (AND2X2)                         0.33       2.13 r
+  U3929/Y (NAND2X2)                        0.27       2.40 f
+  U3956/Y (INVX3)                          0.33       2.73 r
+  U3902/Y (INVX3)                          0.30       3.03 f
+  U3015/Y (OAI22XL)                        0.23       3.27 r
+  U3212/Y (INVXL)                          0.13       3.40 f
+  U3191/Y (AOI222XL)                       0.39       3.79 r
+  U3679/Y (AOI222XL)                       0.23       4.02 f
+  U3044/Y (AOI222XL)                       0.48       4.50 r
+  U3048/Y (AOI222XL)                       0.23       4.73 f
+  U3056/Y (AOI222XL)                       0.46       5.19 r
+  U3562/Y (AOI222XL)                       0.25       5.44 f
+  U3980/Y (AOI222XL)                       0.51       5.95 r
+  U3116/Y (INVXL)                          0.13       6.08 f
+  U3984/Y (OAI22XL)                        0.39       6.48 r
+  U3087/Y (INVXL)                          0.30       6.77 f
+  U5473/Y (AOI221XL)                       0.38       7.15 r
+  U5477/Y (OAI21XL)                        0.11       7.26 f
+  U5478/Y (AO22X1)                         0.34       7.60 f
+  iot_idata_r_reg[59]/D (DFFRX1)           0.00       7.60 f
+  data arrival time                                   7.60
+
+  clock clk (rise edge)                    7.00       7.00
+  clock network delay (ideal)              1.00       8.00
+  clock uncertainty                       -0.10       7.90
+  iot_idata_r_reg[59]/CK (DFFRX1)          0.00       7.90 r
+  library setup time                      -0.21       7.69
+  data required time                                  7.69
+  -----------------------------------------------------------
+  data required time                                  7.69
+  data arrival time                                  -7.60
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+1
