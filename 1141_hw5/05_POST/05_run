@@ -1,0 +1,1 @@
+vcs testbench.v core_pr.v tsmc13_neg.v sram.v -full64 -R -debug_access+all +v2k +maxdelays -negdelay +neg_tchk +define+SDF+tb0 
